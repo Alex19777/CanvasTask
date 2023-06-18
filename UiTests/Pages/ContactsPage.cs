@@ -9,9 +9,9 @@ public class ContactsPage : BasePage
     private readonly By _createNewContactButtonLocator = By.XPath("//*[@name = 'SubPanel_create']");
     private readonly By _saveContactButtonLocator = By.Id("DetailForm_save2-label");
     private readonly By _roleItemLocator = By.Id("DetailFormbusiness_role-input-label");
-	private readonly By _loadingWindowLocator = By.XPath("//*[text() = 'Loading ...']");
-	private readonly By _categoryItemLocator = By.CssSelector("#DetailFormcategories-input");
-	private readonly By _categoryItemOpenDropDownLocator = By.CssSelector(".input-field.select-list.rbullet.active.flat-bottom");
+    private readonly By _loadingWindowLocator = By.XPath("//*[text() = 'Loading ...']");
+    private readonly By _categoryItemLocator = By.CssSelector("#DetailFormcategories-input");
+    private readonly By _categoryItemOpenDropDownLocator = By.CssSelector(".input-field.select-list.rbullet.active.flat-bottom");
     private readonly By _categoryCustomersItemLocator = By.XPath("//*[contains(text(), 'Customers')]");
     private readonly By _categorySuppliersItemLocator = By.XPath("//*[contains(text(), 'Suppliers')]");
     private readonly By _roleCeoItemLocator = By.XPath("//*[contains(text(), 'CEO')]");

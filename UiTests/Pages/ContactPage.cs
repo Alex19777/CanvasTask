@@ -13,9 +13,9 @@ public class ContactPage : BasePage
     
     public ContactPage(IWebDriver driver, WaitService waitService) : base(driver, waitService) {}
 
-	public ContactModel GetContactInformation()
-	{
-		var contactModel = new ContactBuilder()
+    public ContactModel GetContactInformation()
+    {
+    	var contactModel = new ContactBuilder()
             .WithFirstName(waitService.waitForVisability(_contactFullNameLocator).Text.Trim().Split(' ').First())
             .WithLastName(waitService.waitForVisability(_contactFullNameLocator).Text.Trim().Split(' ').Last())
             .WithCategories(waitService.waitForVisability(_categoriesLocator).Text
@@ -23,6 +23,6 @@ public class ContactPage : BasePage
             .WithRole(waitService.waitForVisability(_contactRoleLocator).Text)
             .Build();
 
-		return contactModel;
-	}
+    	return contactModel;
+    }
 }

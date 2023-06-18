@@ -8,10 +8,10 @@ public class LoginPage : BasePage
     private By emailInputLocator = By.Name("user_name");
     private By passwordInputLocator = By.Id("login_pass");
     private By signInButtonLocator = By.Id("login_button");
-	private By themesDropDownLocator = By.Id("login_theme");
-	private By spectrumThemeLocator = By.XPath("//option[text() = 'Spectrum Theme']");
-
-	public LoginPage(IWebDriver driver, WaitService waitService) : base(driver, waitService) {}
+    private By themesDropDownLocator = By.Id("login_theme");
+    private By spectrumThemeLocator = By.XPath("//option[text() = 'Spectrum Theme']");
+    
+    public LoginPage(IWebDriver driver, WaitService waitService) : base(driver, waitService) {}
 
     public LoginPage InputCredentials(string email, string password)
     {

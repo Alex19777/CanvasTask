@@ -8,13 +8,13 @@ public class HomePage : BasePage
 {
     private Actions _action;
 
-	private readonly By _salesAndMarketingItemLocator = By.XPath("//a[text() = 'Sales & Marketing']");
-	private readonly By _reportsAndSettingItemLocator = By.XPath("//a[text() = 'Reports & Settings']");
-	private readonly By _contactsItemLocator =
+    private readonly By _salesAndMarketingItemLocator = By.XPath("//a[text() = 'Sales & Marketing']");
+    private readonly By _reportsAndSettingItemLocator = By.XPath("//a[text() = 'Reports & Settings']");
+    private readonly By _contactsItemLocator =
         By.XPath("//a[text() = 'Contacts']");
-	private readonly By _activityLogItemLocator = By.XPath("//*[text( )= 'Activity Log']");
-
-	public HomePage(IWebDriver driver, WaitService waitService) : base(driver, waitService)
+    private readonly By _activityLogItemLocator = By.XPath("//*[text( )= 'Activity Log']");
+    
+    public HomePage(IWebDriver driver, WaitService waitService) : base(driver, waitService)
     {
         _action = new Actions(driver);
     }

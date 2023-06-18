@@ -6,13 +6,13 @@ namespace UiTests.pages;
 
 public class ReportsPage : BasePage
 {
-	private readonly By _loadingWindowLocator = By.XPath("//*[text() = 'Loading ...']");
-	private readonly By _reportInfoLocator = By.TagName("h4");
-	private readonly By _runArchiveReportButtonLocator = By.Name("FilterForm_archiveButton");
+    private readonly By _loadingWindowLocator = By.XPath("//*[text() = 'Loading ...']");
+    private readonly By _reportInfoLocator = By.TagName("h4");
+    private readonly By _runArchiveReportButtonLocator = By.Name("FilterForm_archiveButton");
     private readonly By _reportItemLocator = By.ClassName("listViewNameLink");
     private readonly By _searchFieldLocator = By.XPath("//div[@class= 'input-field input-field-group input-search filter']/child::input");
-
-	private Actions _actions;
+    
+    private Actions _actions;
 
     public ReportsPage(IWebDriver driver, WaitService waitService) : base(driver, waitService)
     {
